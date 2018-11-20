@@ -10,15 +10,16 @@ Now that you know what sets are, we can go on and work with two sets that are of
 You will be able to:
 
 - Learn about experiments, outcomes and event space
-- Understand probability through the law of relative frequency
+- Understand probability through relative frequency
 - Learn about the probability axioms
-- Learn about the addition law of probability
+- Learn about the addition rule of probability
 - Learn that where each outcome is equally likely, the probability is equal to number of outcomes in the event space divided by number of outcomes in the sample space
 
 
-##  Sample space, event space and the law of relative frequency
+##  Sample space, event space and relative frequency
 
-#### a. Let's throw a dice once: formula of Laplace
+#### First let's use Laplace's theory of probabilities and apply it to a dice-rolling experiment! 
+#### a. Let's throw a dice once.
 
 First, create a set `roll_dice` that holds the sample space.
 
@@ -44,9 +45,9 @@ prob_5_6  # 0.3333333333333333
 
 Using this formula, it should be clear that the answer is 1/3 or 0.3333....  
 
-#### b. Now, let's simulate rolling dice to see how the law of relative frequency works.
+#### b. Now, let's simulate rolling dice to see how relative frequency works.
 
-As mentioned in the lecture, the law of relative frequency can be used to prove certain probabilities. But how does this work exactly? You're about to find out!
+As mentioned in the lecture, relative frequency can be used to prove certain probabilities. But how does this work exactly? You're about to find out!
 
 $$P(E) = \lim_{n\rightarrow\infty} \dfrac{S{(n)}}{n}$$
 
@@ -137,7 +138,7 @@ We want to make sure that the three probability axioms are fulfilled, because th
 - if we have an event space $E$ and a probability measure $P$, 
 - **and** the three probability axioms are fulfilled, 
 
-The third axiom is fairly ad hoc, and you will basically have to deduct from the context whether individual events are independent. It is fairly straightforward, however, that people can not be inhabitants of two continents at the same time, so for now, we will assume that we're good for axiom three.
+The third axiom is fairly ad hoc, and you will basically have to deduce from the context whether individual events are independent. It is fairly straightforward, however, that people can not be inhabitants of two continents at the same time, so for now, we will assume that we're good for axiom three.
 
 However, we can use the numpy array `continents` to verify if axiom 1 and 2 are fulfilled. Create a function "axioms" that returns the message "We're good!" if both axiom 1 and 2 are fulfilled, and "Not quite!" if that's not the case.
 
@@ -266,7 +267,7 @@ print(prob_sum_8)
 
 A teaching assistant is holding office hours so students can make appointments. She has 6 appointments scheduled today, 3 by male students, and 3 by female students. 
 
-Create a NumPy array te say way as we did this for you in the "throwing a dice twice" exercise. It will be quite a bit of typing, as your resulting NumPy array will have a shape (20,6)!
+Create a NumPy array of possible outcomes in the same way as we did in the "throwing a dice twice" exercise. It will be quite a bit of typing, as your resulting NumPy array will have a shape (20,6)!
 
 
 ```python
@@ -327,7 +328,7 @@ None
 
 You noticed that coming up with the sample space was probably the most time-consuming part of the exercise, and it would really become unfeasible to write this down for say, 10 or, even worse, 20 appointments in a row. You'll learn about methods that make this easy in the next lecture!
 
-## The Addition Law of Probability
+## The Addition Rule of Probability
 At a supermarket, we randomly select customers, and make notes of whether a certain customer owns a Visa card (event A) or an Amex credit card (event B). Some customers own both cards.
 You can assume that:
 
@@ -345,4 +346,9 @@ You can assume that:
 
 ## Summary
 
-In this lab, you got to practice your knowledge on the foundations of probability through working on problems regarding the law of relative frequency, the probability axioms and the addition law of probability.
+In this lab, you got to practice your knowledge on the foundations of probability through working on problems regarding relative frequency, the probability axioms and the addition rule of probability.
+
+
+```python
+
+```
