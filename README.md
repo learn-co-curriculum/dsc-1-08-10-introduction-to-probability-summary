@@ -19,7 +19,7 @@ You will be able to:
 ##  Sample space, event space and relative frequency
 
 #### First let's use Laplace's theory of probabilities and apply it to a dice-rolling experiment! 
-#### a. Let's throw a dice once: Laplace's method
+#### a. Let's throw a dice once.
 
 First, create a set `roll_dice` that holds the sample space.
 
